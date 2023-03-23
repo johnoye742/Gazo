@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Gazo</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+       
+       <link rel="stylesheet" href="./assets/css/home.css">
+       <script src="https://kit.fontawesome.com/fe8ea98d93.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="bg-gray-300">
+        <header>
+            <nav class="navbar rounded-lg bg-white p-4 shadow-md m-5 flex justify-between">
+                <div>
+                   <img src="./assets/images/gazo.png" class="lg:w-15 lg:h-12 w-15 h-8" style="object-fit:cover;">
+                </div>
+                
+                <div class="flex flex-row" id="m-row">
+                    
+                </div>
+                <div class="lg:hidden">
+                    <i class="fa fa-bars text-2xl lg:hidden"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--shows up in drag and drop file-->
+        <div class="drop-indicator hidden flex-col text-center items-center justify-center">
+            <h2 class="text-3xl text-blue-800">Drop here</h2>
+        </div>
+
+        
+        <main>
+            <div class="container lg:px-20 px-3">
+                <div class="container flex relative flex-col items-center shadow-xl p-6 lg:h-[30em] rounded-lg bg-white justify-center text-center" id="dropzone">
+                    <form class="w-fit-content">
+                        <i class="fa fa-cloud-arrow-up text-9xl text-gray text-center"></i>
+                        <p class="text-xl text-center m-5">Drag and drop images here or <label for="files" class="hover:cursor-pointer text-sky-500 transition-all transition-duration-300">click to select images</label>.</p>
+                       
+                       <input type="file" id="files" style="display:none;" multiple>
+                       <p class="m-5" id="filenames"></p>
+                       <div class="_here rounded-lg absolute hidden top-0 left-0 w-full h-full z-30 bg-gray-200 text-black text-center flex-col items-center justify-center text-2xl">Drop here!</div>
+                       <div class="_uploading rounded-lg absolute hidden top-0 left-0 w-full h-full z-30 bg-gray-200 text-black text-center flex-col items-center justify-center text-2xl"></div>
+                       <div class="flex flex-row justify-between" id="images"></div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="p-5 bg-black text-white flex flex-col items-center">
+            <!--<p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptas. Non nihil nisi illum quasi in ipsam odit ratione optio voluptate illo possimus laboriosam, dolore quos repudiandae reprehenderit, distinctio corporis?<br/>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium recusandae eius facilis itaque, soluta repellat exercitationem, unde delectus deleniti quaerat necessitatibus! Voluptatum praesentium quod nostrum perferendis nesciunt explicabo at fugiat.<br/>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sapiente accusantium exercitationem ut earum sed atque a rem repudiandae eum? Culpa officia consectetur beatae quidem esse unde error quisquam repudiandae!</p>-->
+            <h1 class="text-3xl text-center">All rights reserved. Copyright &copy; <span class="year"></span> John Oye.</h1>
+            <div class="flex flex-row mt-4">
+                <a href="#" class="text-2xl mr-5"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl mr-5"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-2xl mr-5"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+
+        <!--SCRIPTS-->
+        <script src="./assets/js/tailwind.js"></script>
+        <script src="./assets/js/home.js"></script>
+    </body>
+</html>

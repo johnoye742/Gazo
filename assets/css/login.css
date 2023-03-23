@@ -1,0 +1,32 @@
+.navbar ul {
+    height: 100%;
+}
+
+.navbar ul li {
+    margin-right: 1em;
+    transition: all 0.3s;
+}
+
+.navbar ul li:hover {
+    --tw-bg-opacity: 1;
+    color: rgb(14 165 233 / var(--tw-bg-opacity));
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.form-control-file {
+    visibility: hidden;
+    background-color: black;
+}
+
+.form-control-file::before {
+    content: "";
+    background-color: black;
+    padding: 1em;
+}
+
+._here, ._uploading {
+    display: none;
+}

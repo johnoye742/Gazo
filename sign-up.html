@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new account on Gazo</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body class="bg-gray-200">
+    <header>
+        <nav class="navbar rounded-lg bg-white p-4 shadow-md m-5 flex justify-between" id="dropzone">
+            <div>
+               <img alt="" src="./assets/images/gazo.png" class="lg:w-15 lg:h-12 w-15 h-8 object-cover">
+            </div>
+            
+            <div class="flex flex-row">
+                <ul class="flex flex-row items-center justify-center hidden lg:flex">
+                    <li>
+                        <a href="#" class="text-sky-500">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <button type="button" class="px-3 py-2 hidden lg:block bg-sky-500 hover:ring focus:ring rounded-lg text-white mx-4">Login</button>
+                <button type="button" class="p-3 hidden lg:block bg-green-500 rounded-lg hover:ring focus:ring text-white">Sign Up</button>
+            </div>
+            <div class="lg:hidden">
+                <i class="fa fa-bars text-2xl lg:hidden"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container rounded-lg lg:px-20 px-5 flex flex-row my-20 h-fit-content w-full">
+            <img alt="" src="./assets/images/connor-olson-7yPmjStM6rY-unsplash.jpg" class="rounded-l-2xl w-[50%] object-cover hidden lg:block" id="lg-img">
+            <div class="bg-white lg:w-[50%] h-fit-content w-full lg:!rounded-r-2xl lg:rounded-l-none rounded-2xl lg:p-5 py-20 p-5" id="main">
+                <div class="px-2">
+                    <h1 class="text-xl text-gray text-bold">CREATE AN ACCOUNT FOR FREE</h1>
+                    <h1 class="text-4xl">Sign Up</h1>
+                </div>
+                <form class="w-[100%] h-[100%] py-10 lg:pr-10" id="sign-up">
+                   <!--- <div class="flex flex-col">
+                        <label for="usern">Username or email address</label>
+                        <input type="text" id="usern" placeholder="janedoe@example.com" class="border-2 border-sky-500 p-2 w-fit h-fit rounded focus:ring outline-none">
+                    </div> -->
+                    <div class="flex flex-row w-full">
+                        <input type="text" class="p-3 border-b-2 border-gray focus:border-sky-500 outline-none w-[50%] mr-5 mb-8 transition-all ease-in-out duration-300" placeholder="First Name" id="fname" name="fname" required>
+                        <input type="text" class="p-3 border-b-2 border-gray focus:border-sky-500 outline-none w-[50%] mb-8 transition-all ease-in-out duration-300" placeholder="Last Name" id="lname" name="lname" required>
+                    </div>
+                    <input type="text" class="p-3 border-b-2 border-gray focus:border-sky-500 outline-none w-full mb-8 transition-all ease-in-out duration-300" placeholder="Username" id="uname" name="uname" required>
+                    <input type="email" class="p-3 border-b-2 border-gray focus:border-sky-500 outline-none w-full mb-8 transition-all ease-in-out duration-300" placeholder="Email address" id="email" name="email" required>
+                    <input type="password" class="p-3 border-b-2 border-gray focus:border-sky-500 outline-none w-full mb-8 transition-all ease-in-out duration-300" placeholder="Password" id="password" name="pwd" required>
+                    <div class="flex flex-row mb-8">
+                        <input type="checkbox" class="mr-2 accent-sky-600 transition ease-in-out duration-300" id="subscribe" name="subscribe">
+                        <label for="subscribe">Subscribe to our newsletter</label>
+                    </div>
+                    <button type="button" class="px-8 py-3 bg-sky-500 hover:bg-sky-600 focus:ring focus:bg-sky-700 rounded-lg text-white transition-all ease-in-out duration-300">Sign Up</button>
+                    <p class="my-5">Already have an account? <a href="login.html" class="text-sky-500">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!--SCRIPTS-->
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/sign-up.js"></script>
+    <script src="./assets/vendor/sweetalert/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
